@@ -238,42 +238,125 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-       
-
-              <!-- Basic Bootstrap Table -->
-         
-                           
-              <!--/ Basic Bootstrap Table -->
 
               <hr class="my-5" />
-
+   
              
-
-           
              
+            <!-- / Content -->
 
-             
-
-
-             
-
-            
-            
-
-            
-
-           
-
-              <!-- Contextual Classes -->
-            
-
-            
-              <!--/ Contextual Classes -->
-
-         
-              <div class="container">
+            <div class="container">
                 <input class="form-control mb-4" id="tableSearch" type="text"
-                  placeholder="بحث..">
+                  placeholder="بحث في المكفولين الشهريين..">
+              
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th class="table-success ">اسم المكفولين</th>
+                      <th class="table-success "> رقم الإدراج</th>
+                      <th class="table-success ">رقم الكرت</th>
+                      <th class="table-success ">الفئة </th>
+                      <th class="table-success ">التفاصيل </th>
+                    </tr>
+                  </thead>
+                  <tbody id="myTable">
+                    <tr>
+                      <td>بشرى صالح</td>
+                      <td>2</td>
+                      <td>5923456</td>
+                       <td><span class="badge bg-label-success me-1">A</span></td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="detail-info.html"
+                              ><i class="bx bx bxs-detail"></i> عرض التفاصيل</a
+                            > 
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="bx bx-edit-alt me-1"></i> تعديل</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>رغد صالح</td>
+                      <td>3</td>
+                      <td>5987623</td>
+                      <td><span class="badge bg-label-primary me-1">B</span></td>
+
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="detail-info.html"
+                              ><i class="bx bx bxs-detail"></i> عرض التفاصيل</a
+                            > 
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="bx bx-edit-alt me-1"></i> تعديل</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>حمزة</td>
+                      <td>4</td>
+                      <td>5912387</td>
+                      <td><span class="badge bg-label-warning me-1">C</span></td>
+
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="detail-info.html"
+                              ><i class="bx bx bxs-detail"></i> عرض التفاصيل</a
+                            > 
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="bx bx-edit-alt me-1"></i> تعديل</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>كمال</td>
+                      <td>4</td>
+                      <td>5934098</td>
+                       <td><span class="badge bg-label-success me-1">A</span></td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="detail-info.html"
+                              ><i class="bx bx bxs-detail"></i> عرض التفاصيل</a
+                            > 
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="bx bx-edit-alt me-1"></i> تعديل</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+                </div>
+              </section>
+             
+            <!-- / Content -->
+
+            <div class="container">
+                <input class="form-control mb-3" id="tableSearch" type="text"
+                  placeholder="بحث في المكفولين السنويين..">
               
                 <table class="table table-bordered table-striped">
                   <thead>
