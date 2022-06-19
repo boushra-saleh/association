@@ -167,3 +167,38 @@ function validateForm() {
     return false;
   }
 }
+$("input[name='filterStatus'], select.filter").change(function () {
+  var classes = "";
+  var stateClass = ""
+  
+      $("input[name='filterStatus']").each(function() {
+      if ($(this).is(":checked")) {
+      classes += "." + $(this).val();
+      }
+  });
+  
+  $("select.filter").each(function() {
+  if ($(this).val() != 'ZZ') {
+  stateClass += "." + $(this).val();
+  }
+  });
+  
+  if (classes == "" && stateClass == "") {
+  // if no filters selected, show all items
+  $("#StatusTable tbody tr").show();
+  } else {
+  // otherwise, hide everything...
+  $("#StatusTable tbody tr").hide();
+  
+      // then show only the matching items
+  rows = $("#StatusTable tr" + classes + stateClass);
+  if (rows.size() > 0) {
+  rows.show();
+  }
+  }
+  
+  });
+
+  $(function() {
+    $('#table').bootstrapTable()
+  });
